@@ -1,4 +1,8 @@
+import sys
+sys.path.append('/workspaces/Combo-Offer-Optimizer/')
+
 import unittest
+import pandas as pd
 from src.optimizer import ComboOfferOptimizer
 
 class TestComboOfferOptimizer(unittest.TestCase):

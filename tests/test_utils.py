@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/workspaces/Combo-Offer-Optimizer/')
+
 import unittest
 import pandas as pd
 from src.utils import load_product_hierarchy, load_transactions, map_to_hierarchy

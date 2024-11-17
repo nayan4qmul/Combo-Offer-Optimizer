@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/workspaces/Combo-Offer-Optimizer/')
+
 from src.optimizer import ComboOfferOptimizer
 import pandas as pd
 
