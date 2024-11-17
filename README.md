@@ -14,3 +14,31 @@ This project contains an optimization model for generating combo offers based on
 - Install dependencies:
   ```bash
   pip install -r requirements.txt
+  ```
+
+### Usage
+Run the example script to see the optimization in action:
+```bash
+python examples/run_optimizer.py
+```
+
+### Running the Optimizer
+You can also create your own dataset and use the ComboOfferOptimizer class as follows:
+```python
+from src.optimizer import ComboOfferOptimizer
+
+# Load your data
+transactions = [...]
+product_hierarchy = pd.DataFrame([...])
+product_prices = {...}
+inventory_levels = {...}
+
+# Instantiate and run the optimizer
+optimizer = ComboOfferOptimizer(transactions, product_hierarchy, product_prices, inventory_levels, retailer_objectives)
+optimized_combos = optimizer.optimize_all_levels()
+
+print(optimized_combos['Product'])
+```
+
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
