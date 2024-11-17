@@ -41,4 +41,4 @@ print(optimized_combos['Product'])
 ```
 
 ### License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/nayan4qmul/Combo-Offer-Optimizer/blob/main/LICENSE) file for details.
